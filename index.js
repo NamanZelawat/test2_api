@@ -48,6 +48,6 @@ app.post("/api/content3",(req,res) => {
     });
 });
 
-const port = 5050;
+const port = process.env.PORT||5050;
 
 app.listen(port,() => console.log(`Server started on port ${port}`));
